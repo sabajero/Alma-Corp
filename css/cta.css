@@ -1,0 +1,73 @@
+/*
+  ============================================================
+  ALMA-CORP — CTA BAND
+  ============================================================
+  Full-width call-to-action strip between sections.
+  TO CHANGE: background → update .cta-band background
+  ============================================================
+*/
+
+.cta-band {
+  padding-block: var(--space-xl);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.cta-band-text {
+  font-size: var(--text-xl);
+  font-weight: normal;
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-snug);
+  max-width: 28ch;
+}
+
+.cta-band-sub {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  max-width: 44ch;
+  line-height: var(--leading-loose);
+}
+
+/* ── BUTTON ─────────────────────────────────────────────── */
+.cta-button {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  border: 1px solid var(--color-text);
+  padding: var(--space-sm) var(--space-md);
+  color: var(--color-text);
+  background: transparent;
+  transition: background var(--ease-base), color var(--ease-base), border-color var(--ease-base);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background: var(--color-lime);
+  border-color: var(--color-lime);
+  color: var(--color-text);
+}
+
+/* ── DESKTOP ─────────────────────────────────────────────── */
+@media (min-width: 768px) {
+  .cta-band {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-xl);
+  }
+  .cta-band-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+  .cta-button {
+    flex-shrink: 0;
+    align-self: auto;
+  }
+}

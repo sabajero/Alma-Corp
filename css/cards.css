@@ -1,0 +1,83 @@
+/*
+  ============================================================
+  ALMA-CORP — CARDS / TESTIMONIALS SECTION
+  ============================================================
+  Horizontal continuous scrolling marquee.
+  ============================================================
+*/
+
+/* ── SECTION WRAPPER ────────────────────────────────────── */
+.cards-section {
+  padding-block: var(--space-xl);
+  overflow: hidden; /* Hide anything outside */
+}
+
+/* ── CARDS TRACK (Marquee Container) ────────────────────── */
+.cards-track {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ── INNER SCROLLING CONTAINER ──────────────────────────── */
+.cards-track-inner {
+  display: flex;
+  gap: var(--space-md);
+  width: max-content; /* Let it grow to fit all items */
+  animation: scroll-marquee 40s linear infinite;
+}
+
+/* Pause animation on hover */
+.cards-track-inner:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Scrolls exactly half its width (the 5 duplicated items) */
+}
+
+/* ── INDIVIDUAL CARD ────────────────────────────────────── */
+.card {
+  width: 320px; /* Fixed width */
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  transition: box-shadow var(--ease-base), border-color var(--ease-base);
+}
+
+/* Remove hover scale for a cleaner look */
+.card:hover {
+  box-shadow: var(--shadow-sm);
+  border-color: var(--color-border); 
+}
+
+/* ── CARD COMPANY NAME ──────────────────────────────────── */
+.card-company {
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--space-sm);
+}
+
+/* ── CARD QUOTE ─────────────────────────────────────────── */
+.card-quote {
+  font-size: var(--text-base);
+  font-style: italic;
+  line-height: var(--leading-loose);
+  color: var(--color-text);
+  flex: 1;
+}
+
+/* ── CARD FOOTER (optional attribution) ─────────────────── */
+.card-attribution {
+  font-size: var(--text-xs);
+  color: var(--color-text-faint);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}

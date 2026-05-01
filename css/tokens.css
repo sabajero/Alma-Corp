@@ -1,0 +1,115 @@
+/*
+  ============================================================
+  ALMA-CORP — DESIGN TOKENS
+  ============================================================
+  This file controls ALL colors, fonts, spacing, and sizes
+  for the entire website.
+
+  HOW TO CUSTOMIZE:
+  - Change accent colors → find --color-lime or --color-purple
+  - Change font         → update --font-main
+  - Change spacing      → update the spacing scale
+  ============================================================
+*/
+
+:root {
+
+  /* ── BACKGROUNDS & SURFACES ──────────────────────────────*/
+  --color-bg: #f4f4f2;
+  /* Page background          */
+  --color-surface: #e8e8e5;
+  /* Card background          */
+  --color-surface-2: #ddddd8;
+  /* Slightly darker surface  */
+
+  /* ── TEXT ────────────────────────────────────────────────*/
+  --color-text: #0d0d0d;
+  /* Main body text           */
+  --color-text-muted: #5a5a56;
+  /* Secondary / caption text */
+  --color-text-faint: #9a9a94;
+  /* Very subtle text         */
+
+  /* ── BORDERS ─────────────────────────────────────────────*/
+  --color-border: rgba(13, 13, 13, 0.10);
+
+  /* ── ACCENT COLORS ───────────────────────────────────────
+     Change these freely at any time!                        */
+  --color-lime: #c2ff00;
+  /* Bright lime accent       */
+  --color-purple: #4e1fa8;
+  /* Deep purple accent       */
+
+  /* ── HEADER ──────────────────────────────────────────────*/
+  --header-bg: rgba(244, 244, 242, 0.82);
+  --header-blur: 5px;
+  --header-height: 60px;
+
+  /* ── TYPOGRAPHY ──────────────────────────────────────────*/
+  --font-main: Arial, Helvetica, sans-serif;
+
+  /* Size scale */
+  --text-xs: 0.70rem;
+  /* 11px — labels, eyebrows       */
+  --text-sm: 0.825rem;
+  /* 13px — captions               */
+  --text-base: 1rem;
+  /* 16px — body                   */
+  --text-md: 1.125rem;
+  /* 18px — larger body            */
+  --text-lg: 1.375rem;
+  /* 22px — subheadings            */
+  --text-xl: 1.75rem;
+  /* 28px — headings               */
+  --text-2xl: 2.25rem;
+  /* 36px — large headings         */
+  --text-hero: clamp(2.2rem, 7vw, 4.5rem);
+  /* Fluid hero   */
+
+  /* Line height */
+  --leading-tight: 1.2;
+  --leading-snug: 1.4;
+  --leading-normal: 1.6;
+  --leading-loose: 1.8;
+
+  /* Letter spacing */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.08em;
+  --tracking-wider: 0.16em;
+
+  /* ── SPACING SCALE ───────────────────────────────────────*/
+  --space-2xs: 0.25rem;
+  /*  4px */
+  --space-xs: 0.5rem;
+  /*  8px */
+  --space-sm: 0.875rem;
+  /* 14px */
+  --space-md: 1.5rem;
+  /* 24px */
+  --space-lg: 2.5rem;
+  /* 40px */
+  --space-xl: 4rem;
+  /* 64px */
+  --space-2xl: 6rem;
+  /* 96px */
+
+  /* ── LAYOUT ──────────────────────────────────────────────*/
+  --max-width: 1120px;
+  --page-pad: 1.25rem;
+  /* Horizontal padding on mobile   */
+
+  /* ── BORDERS & RADIUS ────────────────────────────────────*/
+  --radius-sm: 3px;
+  --radius-md: 6px;
+
+  /* ── TRANSITIONS ─────────────────────────────────────────*/
+  --ease-fast: 150ms ease;
+  --ease-base: 250ms ease;
+  --ease-slow: 400ms ease;
+
+  /* ── SHADOWS ─────────────────────────────────────────────*/
+  --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+
+}

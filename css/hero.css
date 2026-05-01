@@ -1,0 +1,70 @@
+/*
+  ============================================================
+  ALMA-CORP — HERO SECTION (index.html)
+  ============================================================
+  The large opening section with headline and tagline.
+  TO CHANGE: title size → --text-hero in tokens.css
+  ============================================================
+*/
+
+/* ── HERO SECTION ───────────────────────────────────────── */
+.hero {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+
+
+/* ── MAIN TITLE ─────────────────────────────────────────── */
+.hero-title {
+  font-size: var(--text-hero);
+  font-family: var(--font-main);
+  font-weight: normal;
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-tight);
+  color: var(--color-text);
+  max-width: 14ch;
+  margin-bottom: var(--space-lg);
+}
+
+/* ── SUBTITLE / TAGLINE ─────────────────────────────────── */
+.hero-subtitle {
+  font-size: var(--text-md);
+  color: var(--color-text-muted);
+  line-height: var(--leading-loose);
+  max-width: 52ch;
+  margin-bottom: var(--space-lg);
+}
+
+/* ── CTA BUTTON ─────────────────────────────────────────── */
+.hero-cta {
+  display: inline-block;
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-bg);
+  background: var(--color-lime);
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--color-lime);
+  transition: background var(--ease-base), color var(--ease-base), border-color var(--ease-base);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero-cta:hover {
+  background: var(--color-lime);
+  border-color: var(--color-lime);
+  color: var(--color-text);
+}
+
+/* ── DESKTOP ADJUSTMENTS ────────────────────────────────── */
+@media (min-width: 768px) {
+  .hero {
+    padding-top: var(--space-2xl);
+    padding-bottom: var(--space-xl);
+  }
+  .hero-subtitle {
+    font-size: var(--text-lg);
+  }
+}

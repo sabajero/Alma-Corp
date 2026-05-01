@@ -1,0 +1,114 @@
+/*
+  ============================================================
+  ALMA-CORP — FOOTER
+  ============================================================
+  Minimal footer with logo, nav links, and copyright.
+  ============================================================
+*/
+
+.footer {
+  padding-block: var(--space-xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+/* ── FOOTER TOP ROW ─────────────────────────────────────── */
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .footer-top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+/* ── FOOTER LOGO ────────────────────────────────────────── */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.footer-logo-mark polygon {
+  fill: none;
+  stroke: var(--color-text);
+  stroke-width: 1.5;
+}
+
+.footer-logo-text {
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.footer-tagline {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-top: var(--space-xs);
+  font-style: italic;
+  max-width: 32ch;
+}
+
+/* ── FOOTER NAV ─────────────────────────────────────────── */
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+@media (min-width: 768px) {
+  .footer-nav { align-items: flex-end; }
+}
+
+.footer-nav-link {
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  transition: color var(--ease-fast);
+}
+
+.footer-nav-link:hover {
+  color: var(--color-text);
+}
+
+/* ── FOOTER BOTTOM ──────────────────────────────────────── */
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+}
+
+@media (min-width: 768px) {
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer-copy {
+  font-size: var(--text-xs);
+  color: var(--color-text-faint);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.footer-note {
+  font-size: var(--text-xs);
+  color: var(--color-text-faint);
+  font-style: italic;
+}
