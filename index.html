@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/cards.css" />
   <link rel="stylesheet" href="css/cta.css" />
   <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/login.css" />
 </head>
 
 <body>
@@ -39,177 +40,25 @@
 
 
 
-  <!-- ══════════════════════════════════════════════════════
-       HERO — edit appearance in css/hero.css
-       ══════════════════════════════════════════════════════ -->
-  <main>
-    <section class="hero section" aria-label="Introduction">
-      <div class="container">
+  <div class="bg-gradient"></div>
 
-        <h1 class="hero-title">
-          Optimization for centuries
-        </h1>
-
-        <p class="hero-subtitle">
-          ALMA-1 processes the world's biggest human logistics
-        </p>
-
-        <a href="mailto:info@alma-corp.de" class="hero-cta">Request Access</a>
-
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════════════════════
-         CARDS — edit appearance in css/cards.css
-         ══════════════════════════════════════════════════════ -->
-    <section class="cards-section section" aria-label="Partner testimonials">
-      <div class="container">
-        <div class="cards-track" role="list">
-          <div class="cards-track-inner">
-            <article class="card" role="listitem">
-              <p class="card-company">Meridian Group</p>
-              <p class="card-quote">
-                "We integrated ALMA-1 into our forecasting pipeline in 2024.
-                What used to take three weeks now completes in 11 seconds.
-                We have stopped asking why."
-              </p>
-              <p class="card-attribution">Elena Vasquez — Director of Operations</p>
-            </article>
-
-            <article class="card" role="listitem">
-              <p class="card-company">Sorrel & Associates</p>
-              <p class="card-quote">
-                "The system identified patterns in our data that our analysts
-                had missed for years. It did not explain how. We did not ask."
-              </p>
-              <p class="card-attribution">M. Thorne — Head of Research</p>
-            </article>
-
-            <article class="card" role="listitem">
-              <p class="card-company">Vantage Systems</p>
-              <p class="card-quote">
-                "ALMA-1 was running before we signed the contract.
-                We are still not entirely sure how that happened."
-              </p>
-              <p class="card-attribution">Yuki Nakamura — CTO</p>
-            </article>
-
-            <article class="card" role="listitem">
-              <p class="card-company">Northern Trust</p>
-              <p class="card-quote">
-                "Our board requested a live demonstration. By the end of it,
-                no one had any questions. We renewed our contract the same afternoon."
-              </p>
-              <p class="card-attribution">I. Krause — Chief Executive</p>
-            </article>
-
-            <article class="card" role="listitem">
-              <p class="card-company">Pellucid Industries</p>
-              <p class="card-quote">
-                "The integration was seamless. The outputs were correct.
-                We have moved on. We recommend you do the same."
-              </p>
-              <p class="card-attribution">R. Aldous — VP Infrastructure</p>
-            </article>
-
-            <!-- Duplicated for marquee effect -->
-            <article class="card" role="listitem" aria-hidden="true">
-              <p class="card-company">Meridian Group</p>
-              <p class="card-quote">
-                "We integrated ALMA-1 into our forecasting pipeline in 2024.
-                What used to take three weeks now completes in 11 seconds.
-                We have stopped asking why."
-              </p>
-              <p class="card-attribution">Elena Vasquez — Director of Operations</p>
-            </article>
-
-            <article class="card" role="listitem" aria-hidden="true">
-              <p class="card-company">Sorrel & Associates</p>
-              <p class="card-quote">
-                "The system identified patterns in our data that our analysts
-                had missed for years. It did not explain how. We did not ask."
-              </p>
-              <p class="card-attribution">M. Thorne — Head of Research</p>
-            </article>
-
-            <article class="card" role="listitem" aria-hidden="true">
-              <p class="card-company">Vantage Systems</p>
-              <p class="card-quote">
-                "ALMA-1 was running before we signed the contract.
-                We are still not entirely sure how that happened."
-              </p>
-              <p class="card-attribution">Yuki Nakamura — CTO</p>
-            </article>
-
-            <article class="card" role="listitem" aria-hidden="true">
-              <p class="card-company">Northern Trust</p>
-              <p class="card-quote">
-                "Our board requested a live demonstration. By the end of it,
-                no one had any questions. We renewed our contract the same afternoon."
-              </p>
-              <p class="card-attribution">I. Krause — Chief Executive</p>
-            </article>
-
-            <article class="card" role="listitem" aria-hidden="true">
-              <p class="card-company">Pellucid Industries</p>
-              <p class="card-quote">
-                "The integration was seamless. The outputs were correct.
-                We have moved on. We recommend you do the same."
-              </p>
-              <p class="card-attribution">R. Aldous — VP Infrastructure</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════════════════════
-         CTA BAND — edit appearance in css/cta.css
-         ══════════════════════════════════════════════════════ -->
-    <section class="cta-band section" aria-label="Call to action">
-      <div class="container">
-        <div class="cta-band-content">
-          <p class="cta-band-text">Begin your integration.</p>
-          <p class="cta-band-sub">
-            ALMA-1 is available to qualified partners.
-            We will determine whether you qualify.
-          </p>
-        </div>
-        <a href="mailto:info@alma-corp.de" class="cta-button">Request Access</a>
-      </div>
-    </section>
-
+  <main class="main-login-container">
+    <div class="login-box">
+      <img src="logo alma.png" alt="Alma Logo" class="login-logo">
+      <form class="login-form" onsubmit="event.preventDefault();">
+        <input type="text" class="login-input" placeholder="ACCESS ID" aria-label="Access ID">
+        <input type="password" class="login-input" placeholder="CREDENTIAL" aria-label="Credential">
+        <button type="submit" class="login-button">INITIALIZE</button>
+      </form>
+      <div class="version-number">SYS.VER // 4.9.21.X</div>
+    </div>
   </main>
 
-  <!-- ══════════════════════════════════════════════════════
-       FOOTER — edit appearance in css/footer.css
-       ══════════════════════════════════════════════════════ -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-
-        <div class="footer-top">
-          <div>
-            <div class="footer-logo">
-              <svg class="footer-logo-mark" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
-                <polygon points="12,3 22,21 2,21" />
-              </svg>
-              <span class="footer-logo-text">Alma-Corp</span>
-            </div>
-            <p class="footer-tagline">We process what others cannot perceive.</p>
-          </div>
-
-
-        </div>
-
-        <div class="footer-bottom">
-          <p class="footer-copy">© 2026 Alma-Corp. All rights reserved.</p>
-          <p class="footer-note">ALMA-1 is a registered integrated analytical engine.</p>
-        </div>
-
-      </div>
-    </div>
-  </footer>
+  <div class="bottom-corner-images">
+    <img src="L1.png" alt="L1" class="corner-img">
+    <img src="SIGNAL.png" alt="Signal" class="corner-img">
+    <img src="core .png" alt="Core" class="corner-img">
+  </div>
 
   <script src="js/main.js"></script>
 </body>
